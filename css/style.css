@@ -21,7 +21,7 @@ rgba(142, 57, 153, 0.6) */
     ),
     url(../img/japan-4092834_1280.jpg) no-repeat center center/cover;
   /* background: url(../img/japan-4092834_1280.jpg) no-repeat center center/cover; */
-  height: 92vh;
+  height: 100vh;
 }
 
 .showcase-header {
@@ -53,7 +53,7 @@ a {
   text-align: center;
 }
 
-.showcase-nav a {
+.btn {
   border: 1px solid #fff;
   border-radius: 2rem;
   padding: 1rem 2.5rem;
@@ -61,7 +61,102 @@ a {
   margin: auto;
   background-color: #fff;
   color: #494ca2;
+  transition: all 0.75s;
   /* box-shadow: 2px 2px 4px 2px rgba(10, 10, 10, 0.6); */
 }
 
-/* Add button hover effect  */
+/* Shadow Pulse Animation  */
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+}
+
+.btn:hover {
+  animation: shadow-pulse 0.75s;
+  border: 1px solid #494ca2;
+  background-color: #494ca2;
+  color: #fff;
+  /* transform: translateY(-0.25em); */
+}
+
+/* About Section  */
+#about {
+  margin: 1rem 6rem;
+  /* border: 1px solid red; */
+  color: #000;
+}
+
+.section-header {
+  margin-left: 25%;
+  margin-right: 25%;
+  color: #494ca2;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+/* About header animation  */
+
+span {
+  display: inline-block;
+  transition: all 0.5s;
+}
+
+span:hover {
+  /* Move text and add border  */
+  transform: translateX(0.25rem) translateY(-0.25em);
+  box-shadow: 2px 2px 4px 2px rgba(10, 10, 10, 0.6);
+}
+
+span::after {
+  content: '';
+  display: block;
+  width: 0;
+  border-bottom: 4px solid #494ca2;
+  transition: all 0.3s;
+}
+
+span:hover::after {
+  width: 100%;
+}
+
+/* About Section Grid  */
+.about-section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Icons  */
+.icon {
+  font-size: 8rem;
+  margin-right: 2rem;
+  transition: all 0.3s;
+  filter: grayscale(50%);
+}
+
+.icon:hover {
+  transform: translateY(-0.5rem);
+  opacity: 1;
+}
+
+.html {
+  color: #f16529;
+}
+
+.css {
+  color: #3c99dc;
+}
+
+.js {
+  color: #f0db4f;
+}
+
+.node {
+  color: #3c873a;
+}
+
+/* Create GSAP Timeline Animation For Icons
+To Change from Filter x% to filter 0% */
