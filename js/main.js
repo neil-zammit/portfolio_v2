@@ -9,7 +9,7 @@ const controller = new ScrollMagic.Controller();
 
 // // Timeline animation to show icons
 var tl = new TimelineMax({});
-// element, delay
+// params: element, delay, style
 tl.from('.html', 0, { opacity: 0 });
 tl.from('.css', 0, { opacity: 0 });
 tl.from('.js', 0, { opacity: 0 });
