@@ -301,7 +301,7 @@ span:hover::after {
   }
 }
 
-.arrow {
+/* .arrow {
   font-size: 4rem;
   transition: all 0.5s;
 }
@@ -311,7 +311,7 @@ span:hover::after {
   animation: neon 1.5s ease-in-out infinite;
   animation-duration: 5s;
   font-size: 5rem;
-}
+} */
 
 /* Contact Form  */
 .contact-form-container {
@@ -350,4 +350,26 @@ textarea {
 
 .submit-btn {
   display: block;
+  cursor: pointer;
+}
+
+/* Footer */
+#footer {
+  background-color: #494ca2;
+  padding-bottom: 2rem;
+}
+
+.footer-content h1 {
+  padding-top: 1rem;
+}
+
+.footer-icon {
+  font-size: 3rem;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.footer-icon:hover {
+  animation: neon 1.5s ease-in-out infinite;
+  animation-duration: 5s;
 }
