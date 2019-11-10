@@ -279,11 +279,12 @@ span:hover::after {
   margin-bottom: 2rem;
 }
 
-/* Contact  */
-/* About Section  */
+/* Contact Section  */
 #contact {
   margin: 3rem 6rem 6rem 6rem;
   color: #494ca2;
+  text-transform: uppercase;
+  font-size: 1.5rem;
   /* height: 80vh;
   height: 100vh; */
 }
@@ -314,8 +315,9 @@ span:hover::after {
 
 /* Contact Form  */
 .contact-form-container {
-  /* border: 2px solid #494ca2; */
   border-radius: 5px;
+  margin-left: 25%;
+  margin-right: 25%;
   padding: 1rem 2rem;
   text-align: center;
   box-shadow: 0 0 5px 2px rgba(73, 76, 162, 0.9);
@@ -371,4 +373,118 @@ textarea {
 .footer-icon:hover {
   animation: neon 1.5s ease-in-out infinite;
   animation-duration: 5s;
+}
+
+/* Media Queries  */
+@media (max-width: 1060px) {
+  /* About Section  */
+  /* Reduce about section side margins  */
+  #about {
+    margin: 3rem 0rem 6rem 1rem;
+  }
+
+  /* Contact Section  */
+  .contact-form-container {
+    border-radius: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1rem 2rem;
+    text-align: center;
+    box-shadow: 0 0 5px 2px rgba(73, 76, 162, 0.9);
+  }
+
+  /* Increase input and textarea width  */
+  input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #999;
+    transition: all 0.3s;
+  }
+
+  textarea {
+    border: none;
+    border-bottom: 2px solid #999;
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  /* About Section */
+  #about {
+    margin: 3rem 6rem 5rem 6rem;
+    padding-bottom: 0;
+  }
+
+  /* About Section */
+  .section-header {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  /* Scrap about section grid  */
+  /* About Section Grid  */
+  .about-section-grid {
+    display: inline-block;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .icons {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+
+  /* Projects Section  */
+
+  /* Projects Grid  */
+  /* Scrap projects section grid  */
+  .projects-section-grid {
+    display: inline-block;
+  }
+
+  /* Project Flip Cards  */
+  .flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 280px;
+    /* 3D Effect  */
+    perspective: 1000px;
+    margin-bottom: 2rem;
+  }
+
+  /* Contact Section  */
+  #contact {
+    margin: 3rem 2rem 6rem 2rem;
+    color: #494ca2;
+  }
+}
+
+@media (max-width: 690px) {
+  /* Showcase  */
+  #showcase a {
+    display: inline-block;
+  }
+
+  /* About Section  */
+  #about h1 {
+    font-size: 2.5rem;
+  }
+
+  .icon {
+    font-size: 6rem;
+    margin-right: 2rem;
+    opacity: 0;
+  }
+
+  /* Contact Section  */
+  #contact h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .icon {
+    font-size: 4rem;
+  }
 }
