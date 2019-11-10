@@ -7,7 +7,7 @@ body {
   color: #fff;
   font-family: 'Fira Sans', sans-serif;
   text-align: center;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 
 /* rgba(30, 115, 172, 0.7),
@@ -461,9 +461,8 @@ textarea {
 }
 
 @media (max-width: 690px) {
-  /* Showcase  */
   #showcase a {
-    display: inline-block;
+    display: block;
   }
 
   /* About Section  */
@@ -483,8 +482,8 @@ textarea {
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 600px) {
   .icon {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 }
