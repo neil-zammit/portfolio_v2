@@ -514,6 +514,11 @@ textarea {
     font-size: 2.5rem;
   }
 
+  .icons {
+    margin-top: 2rem;
+    margin-bottom: 0.2rem;
+  }
+
   .icon {
     font-size: 6rem;
     margin-right: 2rem;
@@ -526,8 +531,14 @@ textarea {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .icon {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .icon {
+    font-size: 2rem;
   }
 }
